@@ -1,0 +1,11 @@
+# Version of Docker Compose file
+version: '3'
+
+# Defines services that will be part of application
+services:
+  web:              
+    build: .                    # Build the docker image using the Dockerfile in current directory
+    ports:
+      - "5000:5000"             # Map port 5000 of container to port 5000 on the host machine
+  redis:
+    image: "redis:alpine"        # Use official Redis image with Alpine version
