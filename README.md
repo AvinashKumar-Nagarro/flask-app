@@ -11,7 +11,7 @@ Step 3: Build Docker image ->
 docker build -t flask-app .
 
 Step 4: Run Docker container ->
-docker run -d -p 8080:80 flask-app
+docker run -d -p 5000:5000 flask-app
 
 Step 5: Access the app ->
 Open any browser and hit http://localhost:5000
